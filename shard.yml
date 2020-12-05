@@ -8,6 +8,10 @@ targets:
   station-trading-helper:
     main: src/station-trading-helper.cr
 
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+
 crystal: 0.35.1
 
 license: MIT
