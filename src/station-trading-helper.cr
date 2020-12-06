@@ -1,6 +1,12 @@
 # TODO: Write documentation for `Station::Trading::Helper`
-module Station::Trading::Helper
-  VERSION = "0.1.0"
+require "kemal"
 
-  # TODO: Put your code here
+module Station::Trading::Helper
+  VERSION = "0.1.0"  
+  
+  get "/" do
+    render "src/views/welcome.ecr"
+  end
 end
+
+Kemal.run
